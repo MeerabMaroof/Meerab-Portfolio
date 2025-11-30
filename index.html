@@ -1,74 +1,145 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Frontend Developer</title>
-  <meta name="description" content="Portfolio — frontend developer. Responsive websites built with HTML, Tailwind CSS, JavaScript.">
-  <!-- Tailwind CDN for quick start -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Meerab Maroof — Frontend Developer</title>
+    <meta name="description"
+        content="Portfolio — Frontend Developer. Responsive websites built with HTML, Tailwind CSS, JavaScript, and Flutter.">
+    <meta name="keywords"
+        content="Frontend Developer, HTML, CSS, Tailwind CSS, JavaScript, Flutter, Portfolio, Web Developer, Responsive Websites, Figma to HTML">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Meerab Maroof — Frontend Developer">
+    <meta property="og:description"
+        content="I build beautiful, fast & responsive websites using HTML, CSS, Tailwind, and JavaScript.">
+    <meta property="og:image" content="https://api.dicebear.com/7.x/adventurer/svg?seed=meerab-female">
+    <meta property="og:url" content="https://your-portfolio-domain.com">
+    <meta property="og:type" content="website">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            background: #f7f8fc;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            background-color: #db2777;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-white shadow">
-    <div class="max-w-4xl mx-auto p-6 flex items-center justify-between">
-      <h1 class="text-xl font-semibold">Your Name</h1>
-      <nav class="space-x-4">
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="max-w-4xl mx-auto p-6">
-    <section class="mt-8">
-      <div class="grid gap-6 md:grid-cols-2 items-center">
-        <div>
-          <h2 class="text-3xl font-bold">I build fast, responsive websites for small businesses.</h2>
-          <p class="mt-4">Landing pages, business sites, and Figma-to-HTML conversions. Deliver in 3–5 days with 2 revisions.</p>
-          <a href="#contact" class="inline-block mt-6 px-6 py-3 rounded-lg border border-gray-300">Contact Me</a>
+
+    <!-- HERO SECTION -->
+    <main class="max-w-6xl mx-auto p-6">
+        <section class="mt-12">
+            <div class="grid gap-10 md:grid-cols-2 items-center bg-white p-8 rounded-2xl shadow-lg">
+
+                <!-- TEXT -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+                        I build beautiful, fast & responsive websites.
+                    </h2>
+
+                    <p class="mt-4 text-gray-600">
+                        I’m Meerab Maroof, a frontend web developer and Flutter learner.
+                        I convert Figma designs into clean, modern websites using
+                        <span class="font-semibold text-pink-600">HTML, CSS, Tailwind, and JavaScript.</span>
+                        I help students, small businesses, and startups get an online presence.
+                    </p>
+
+                    <a href="#contact"
+                        class="inline-block mt-6 px-6 py-3 bg-pink-600 text-white rounded-lg shadow btn-hover">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- AVATAR -->
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://t4.ftcdn.net/jpg/06/43/68/65/360_F_643686558_Efl6HB1ITw98bx1PdAd1wy56QpUTMh47.jpg" alt="Meerab Maroof Avatar"
+                        class="w-56 h-56 rounded-full shadow-2xl border-4 border-white object-cover transition-transform duration-300 hover:scale-105" />
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="mt-16">
+            <h3 class="text-3xl font-semibold text-gray-900">Projects</h3>
+
+            <div class="mt-6 grid gap-6 sm:grid-cols-2">
+                <article
+                    class="project-card bg-white p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300">
+                    <h4 class="font-semibold text-lg text-pink-600">Bakery Website</h4>
+                    <p class="text-sm mt-2 text-gray-600">3-page responsive business website with menu, gallery &
+                        contact page.</p>
+                </article>
+
+                <article
+                    class="project-card bg-white p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300">
+                    <h4 class="font-semibold text-lg text-pink-600">Product Landing Page</h4>
+                    <p class="text-sm mt-2 text-gray-600">Single-page product promo with CTA, features and testimonials
+                        section.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="mt-16">
+            <h3 class="text-3xl font-semibold text-gray-900">Services & Pricing</h3>
+
+            <ul class="mt-6 space-y-3 text-gray-700">
+                <li>🌸 1-page Landing Page — <b>PKR 3,000</b></li>
+                <li>🌸 3-page Business Website — <b>PKR 6,000</b></li>
+                <li>🌸 Figma → HTML Conversion — <b>PKR 4,000</b></li>
+                <li>🌸 Fixing/Improving Existing Frontend — <b>PKR 1,500+</b></li>
+            </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="mt-16 mb-16">
+            <h3 class="text-3xl font-semibold text-gray-900">Contact</h3>
+
+            <p class="mt-3 text-gray-700">
+                📧 Email:
+                <a href="mailto:meerabmaroof146@gmail.com" class="text-pink-600 hover:underline">
+                    meerabmaroof146@gmail.com
+                </a>
+            </p>
+
+            <p class="mt-2 text-gray-700">
+                📱 WhatsApp: <b>+92-317-5716802</b>
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center text-sm text-gray-500">
+            © <span id="year"></span> Meerab Maroof — Frontend Developer
         </div>
-        <div>
-          <img src="https://via.placeholder.com/600x400?text=Project+Preview" alt="Project preview" class="rounded-lg shadow"/>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="projects" class="mt-12">
-      <h3 class="text-2xl font-semibold">Projects</h3>
-      <div class="mt-4 grid gap-6 sm:grid-cols-2">
-        <!-- Project card -->
-        <article class="bg-white p-4 rounded-lg shadow">
-          <h4 class="font-semibold">Business Site — Bakery</h4>
-          <p class="text-sm mt-2">Home, Menu, Contact — responsive.</p>
-        </article>
-        <article class="bg-white p-4 rounded-lg shadow">
-          <h4 class="font-semibold">Landing Page — Product</h4>
-          <p class="text-sm mt-2">Single page with CTA & testimonials.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="services" class="mt-12">
-      <h3 class="text-2xl font-semibold">Services & Pricing</h3>
-      <ul class="mt-4">
-        <li>1-page landing — PKR 3,000</li>
-        <li>3-page business site — PKR 6,000</li>
-        <li>Figma → HTML — PKR 4,000</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="mt-12">
-      <h3 class="text-2xl font-semibold">Contact</h3>
-      <p class="mt-2">Email: <a href="mailto:youremail@example.com" class="text-blue-600">youremail@example.com</a></p>
-      <p class="mt-1">Phone/WhatsApp: +92-XXXXXXXXXX</p>
-    </section>
-  </main>
-
-  <footer class="mt-12 py-6 bg-white">
-    <div class="max-w-4xl mx-auto text-center text-sm">© <span id="year"></span> Your Name — Portfolio</div>
-  </footer>
-
-  <script>document.getElementById('year').innerText = new Date().getFullYear()</script>
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
