@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Frontend Developer</title>
+  <meta name="description" content="Portfolio — frontend developer. Responsive websites built with HTML, Tailwind CSS, JavaScript.">
+  <!-- Tailwind CDN for quick start -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-4xl mx-auto p-6 flex items-center justify-between">
+      <h1 class="text-xl font-semibold">Your Name</h1>
+      <nav class="space-x-4">
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6">
+    <section class="mt-8">
+      <div class="grid gap-6 md:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">I build fast, responsive websites for small businesses.</h2>
+          <p class="mt-4">Landing pages, business sites, and Figma-to-HTML conversions. Deliver in 3–5 days with 2 revisions.</p>
+          <a href="#contact" class="inline-block mt-6 px-6 py-3 rounded-lg border border-gray-300">Contact Me</a>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/600x400?text=Project+Preview" alt="Project preview" class="rounded-lg shadow"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mt-12">
+      <h3 class="text-2xl font-semibold">Projects</h3>
+      <div class="mt-4 grid gap-6 sm:grid-cols-2">
+        <!-- Project card -->
+        <article class="bg-white p-4 rounded-lg shadow">
+          <h4 class="font-semibold">Business Site — Bakery</h4>
+          <p class="text-sm mt-2">Home, Menu, Contact — responsive.</p>
+        </article>
+        <article class="bg-white p-4 rounded-lg shadow">
+          <h4 class="font-semibold">Landing Page — Product</h4>
+          <p class="text-sm mt-2">Single page with CTA & testimonials.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="mt-12">
+      <h3 class="text-2xl font-semibold">Services & Pricing</h3>
+      <ul class="mt-4">
+        <li>1-page landing — PKR 3,000</li>
+        <li>3-page business site — PKR 6,000</li>
+        <li>Figma → HTML — PKR 4,000</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="mt-12">
+      <h3 class="text-2xl font-semibold">Contact</h3>
+      <p class="mt-2">Email: <a href="mailto:youremail@example.com" class="text-blue-600">youremail@example.com</a></p>
+      <p class="mt-1">Phone/WhatsApp: +92-XXXXXXXXXX</p>
+    </section>
+  </main>
+
+  <footer class="mt-12 py-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center text-sm">© <span id="year"></span> Your Name — Portfolio</div>
+  </footer>
+
+  <script>document.getElementById('year').innerText = new Date().getFullYear()</script>
+</body>
+</html>
