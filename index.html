@@ -46,19 +46,19 @@
     </style>
 </head>
 
-
+<body>
     <!-- HERO SECTION -->
-    <main class="max-w-6xl mx-auto p-6">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6"> <!-- Added responsive padding -->
         <section class="mt-12">
-            <div class="grid gap-10 md:grid-cols-2 items-center bg-white p-8 rounded-2xl shadow-lg">
+            <div class="grid gap-8 md:gap-10 md:grid-cols-2 items-center bg-white p-6 sm:p-8 rounded-2xl shadow-lg"> <!-- smaller padding on mobile -->
 
                 <!-- TEXT -->
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug sm:leading-tight text-gray-900"> <!-- smaller heading on mobile -->
                         I build beautiful, fast & responsive websites.
                     </h2>
 
-                    <p class="mt-4 text-gray-600">
+                    <p class="mt-4 text-gray-600 text-base sm:text-lg"> <!-- responsive text size -->
                         I’m Meerab Maroof, a frontend web developer and Flutter learner.
                         I convert Figma designs into clean, modern websites using
                         <span class="font-semibold text-pink-600">HTML, CSS, Tailwind, and JavaScript.</span>
@@ -66,46 +66,44 @@
                     </p>
 
                     <a href="#contact"
-                        class="inline-block mt-6 px-6 py-3 bg-pink-600 text-white rounded-lg shadow btn-hover">
+                        class="inline-block mt-6 px-5 py-2 sm:px-6 sm:py-3 bg-pink-600 text-white rounded-lg shadow btn-hover text-sm sm:text-base"> <!-- smaller button padding on mobile -->
                         Contact Me
                     </a>
                 </div>
 
                 <!-- AVATAR -->
-                <div class="flex justify-center md:justify-end">
+                <div class="flex justify-center md:justify-end mt-6 md:mt-0"> <!-- added margin-top for mobile spacing -->
                     <img src="https://t4.ftcdn.net/jpg/06/43/68/65/360_F_643686558_Efl6HB1ITw98bx1PdAd1wy56QpUTMh47.jpg" alt="Meerab Maroof Avatar"
-                        class="w-56 h-56 rounded-full shadow-2xl border-4 border-white object-cover transition-transform duration-300 hover:scale-105" />
+                        class="w-48 h-48 sm:w-56 sm:h-56 rounded-full shadow-2xl border-4 border-white object-cover transition-transform duration-300 hover:scale-105" />
                 </div>
 
             </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="mt-16">
-            <h3 class="text-3xl font-semibold text-gray-900">Projects</h3>
+        <section id="projects" class="mt-12 sm:mt-16"> <!-- reduced mobile spacing -->
+            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-900">Projects</h3>
 
-            <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <div class="mt-6 grid gap-4 sm:gap-6 sm:grid-cols-2">
                 <article
-                    class="project-card bg-white p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300">
+                    class="project-card bg-white p-4 sm:p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300"> <!-- reduced padding for mobile -->
                     <h4 class="font-semibold text-lg text-pink-600">Bakery Website</h4>
-                    <p class="text-sm mt-2 text-gray-600">3-page responsive business website with menu, gallery &
-                        contact page.</p>
+                    <p class="text-sm mt-2 text-gray-600">3-page responsive business website with menu, gallery & contact page.</p>
                 </article>
 
                 <article
-                    class="project-card bg-white p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300">
+                    class="project-card bg-white p-4 sm:p-6 rounded-xl shadow hover:shadow-lg transition-transform duration-300">
                     <h4 class="font-semibold text-lg text-pink-600">Product Landing Page</h4>
-                    <p class="text-sm mt-2 text-gray-600">Single-page product promo with CTA, features and testimonials
-                        section.</p>
+                    <p class="text-sm mt-2 text-gray-600">Single-page product promo with CTA, features and testimonials section.</p>
                 </article>
             </div>
         </section>
 
         <!-- SERVICES -->
-        <section id="services" class="mt-16">
-            <h3 class="text-3xl font-semibold text-gray-900">Services & Pricing</h3>
+        <section id="services" class="mt-12 sm:mt-16">
+            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-900">Services & Pricing</h3>
 
-            <ul class="mt-6 space-y-3 text-gray-700">
+            <ul class="mt-4 sm:mt-6 space-y-2 sm:space-y-3 text-gray-700"> <!-- reduced mobile spacing -->
                 <li>🌸 1-page Landing Page — <b>PKR 3,000</b></li>
                 <li>🌸 3-page Business Website — <b>PKR 6,000</b></li>
                 <li>🌸 Figma → HTML Conversion — <b>PKR 4,000</b></li>
@@ -114,17 +112,17 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="mt-16 mb-16">
-            <h3 class="text-3xl font-semibold text-gray-900">Contact</h3>
+        <section id="contact" class="mt-12 sm:mt-16 mb-12 sm:mb-16">
+            <h3 class="text-2xl sm:text-3xl font-semibold text-gray-900">Contact</h3>
 
-            <p class="mt-3 text-gray-700">
+            <p class="mt-2 sm:mt-3 text-gray-700">
                 📧 Email:
                 <a href="mailto:meerabmaroof146@gmail.com" class="text-pink-600 hover:underline">
                     meerabmaroof146@gmail.com
                 </a>
             </p>
 
-            <p class="mt-2 text-gray-700">
+            <p class="mt-1 sm:mt-2 text-gray-700">
                 📱 WhatsApp: <b>+92-317-5716802</b>
             </p>
         </section>
